@@ -39,6 +39,12 @@ header {
   }
 }
 
+// Actice state
+
+.nav-active {
+  text-decoration: underline !important;
+}
+
 .nav-container {
   .nav-desktop-links {
     .nav-desktop-link {
