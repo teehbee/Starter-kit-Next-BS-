@@ -22,14 +22,14 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuToggle }) => {
             <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/">
               Forside
             </NavLink>
-            <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/coaching">
-              Coaching
+            <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/underside-1">
+              Underside 1
             </NavLink>
-            <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/om-meg">
-              Om meg
+            <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/underside-2">
+              Underside 2
             </NavLink>
-            <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/kontakt">
-              Kontakt
+            <NavLink activeClassName="my-active-class" className="nav-desktop-link" href="/underside-3">
+              Underside 3
             </NavLink>
           </div>
           <div onClick={onMenuToggle} className="d-block d-lg-none menu-toggle" aria-label="Open menu">
