@@ -1,0 +1,9 @@
+# Tillat alle søkemotorer å indeksere alt
+User-agent: *
+Disallow: /
+
+# Hvis du vil blokkere f.eks. en midlertidig testmappe, kan du legge til:
+# Disallow: /test/
+
+# Sitemap-lenke, pek på sitemap.xml generert av next-sitemap (om du bruker det)
+Sitemap: https://www.dittdomene.no/sitemap.xml
