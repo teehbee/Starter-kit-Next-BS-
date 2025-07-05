@@ -1,5 +1,8 @@
 "use-client";
 
+// import { useSanityData } from "@/utils";
+// import { globalSettingsQuery } from "@/lib/queries";
+// import { SiteSettingsInterface } from "@/data/interface/siteSettingsInterface";
 import Link from "next/link";
 import { NavLink } from "@/components/reusable";
 
@@ -8,6 +11,13 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onMenuToggle }) => {
+  // CMS data
+
+  // const settings = useSanityData<SiteSettingsInterface>(globalSettingsQuery);
+
+  // if (!settings) {
+  //   return null;
+  // }
   return (
     <nav role="navigation">
       <div className="container-fluid d-flex justify-content-between nav-container">
@@ -19,14 +29,14 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuToggle }) => {
             <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/">
               Forside
             </NavLink>
-            <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/underside-1">
-              Underside 1
+            <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/side1">
+              Side 1
             </NavLink>
-            <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/underside-2">
-              Underside 2
+            <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/side2">
+              Side 2
             </NavLink>
-            <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/underside-3">
-              Underside 3
+            <NavLink activeClassName="nav-active" className="nav-desktop-link" href="/kontakt">
+              Kontakt
             </NavLink>
           </div>
           <div onClick={onMenuToggle} className="d-block d-lg-none menu-toggle" aria-label="Open menu">

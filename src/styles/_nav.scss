@@ -39,10 +39,10 @@ header {
   }
 }
 
-// Actice state
-
 .nav-active {
   text-decoration: underline !important;
+  text-decoration-color: $socials-hover-color !important;
+  text-underline-offset: 3px;
 }
 
 .nav-container {
@@ -84,6 +84,7 @@ header {
       a {
         margin-bottom: 15px;
         text-decoration: none;
+        font-size: 1.25rem;
         &:hover {
           text-decoration: underline;
         }

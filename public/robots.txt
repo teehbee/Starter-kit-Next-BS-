@@ -1,9 +1,9 @@
-# Tillat alle søkemotorer å indeksere alt
+# *
 User-agent: *
-Disallow: /
+Allow: /
 
-# Hvis du vil blokkere f.eks. en midlertidig testmappe, kan du legge til:
-# Disallow: /test/
+# Host
+Host: https://coaching-site-next-js-git-main-teehbees-projects.vercel.app/
 
-# Sitemap-lenke, pek på sitemap.xml generert av next-sitemap (om du bruker det)
-Sitemap: https://www.dittdomene.no/sitemap.xml
+# Sitemaps
+Sitemap: https://coaching-site-next-js-git-main-teehbees-projects.vercel.app/sitemap.xml

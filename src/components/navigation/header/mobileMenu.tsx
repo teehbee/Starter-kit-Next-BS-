@@ -1,5 +1,9 @@
 "use-client";
 
+// import { useSanityData } from "../../../utils";
+// import { globalSettingsQuery } from "@/lib/queries";
+// import { SiteSettingsInterface } from "@/data/interface/siteSettingsInterface";
+// import Image from "next/image";
 import { NavLink } from "@/components/reusable";
 import Link from "next/link";
 import { useRef } from "react";
@@ -13,6 +17,14 @@ interface MobileMenuProps {
 const MobileMenu: React.FC<MobileMenuProps> = ({ onClose, isMenuOpen }) => {
   const menuRef = useRef<HTMLDivElement>(null);
   useMenuBehavior({ isMenuOpen, menuRef, onClose });
+
+  // CMS data
+
+  // const settings = useSanityData<SiteSettingsInterface>(globalSettingsQuery);
+
+  // if (!settings) {
+  //   return null;
+  // }
 
   return (
     <div className={`menu-backdrop ${isMenuOpen ? "show" : ""}`}>
@@ -29,14 +41,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onClose, isMenuOpen }) => {
             <NavLink activeClassName="nav-active" href="/" onClick={onClose}>
               Forside
             </NavLink>
-            <NavLink activeClassName="nav-active" href="/underside-1" onClick={onClose}>
-              Underside 1
+            <NavLink activeClassName="nav-active" href="/side1" onClick={onClose}>
+              Side 1
             </NavLink>
-            <NavLink activeClassName="nav-active" href="/underside-2" onClick={onClose}>
-              Underside 2
+            <NavLink activeClassName="nav-active" href="/side2" onClick={onClose}>
+              Side 2
             </NavLink>
-            <NavLink activeClassName="nav-active" href="/underside-3" onClick={onClose}>
-              Underside 3
+            <NavLink activeClassName="nav-active" href="/kontakt" onClick={onClose}>
+              Kontakt
             </NavLink>
           </nav>
         </div>
